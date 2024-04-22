@@ -1,10 +1,24 @@
 body{
     position: -webkit-sticky;
     position: sticky;
+    display: inline-block;
 }
-.moo{
+.frog.head.big{
     position: relative;
     background-color: green;
+    border: 2px solid black;
+    width: 200px;
+    height: 60px;
+   top: 20px;
+   z-index: 20;
+   text-align: center;
+   border-radius: 10px;
+   font-weight: bold;
+   font-size: medium;
+}
+.frog2.head.big{
+    position: relative;
+    background-color: orange;
     border: 2px solid black;
     width: 200px;
     height: 60px;
@@ -18,7 +32,7 @@ body{
 div{
     display: inline-block;
 }
-.ochio{
+.frog.eye2.big{
     position: relative;
     right: 20px;
     background-color: green;
@@ -30,7 +44,7 @@ div{
     border: 2px solid black;
     
 }
-.ochio2{
+.frog.eye1.big{
     position: relative;
     left: 20px;
     background-color: green;
@@ -42,7 +56,7 @@ div{
     z-index: 2000;
     border: 2px solid black;
 }
-.type1.small{
+.frog.head.small{
     position: relative;
     background-color: green;
     border: 2px solid black;
@@ -54,10 +68,11 @@ div{
    border-radius: 10px;
    font-weight: bold;
    font-size: medium;
+   
 }
-.type2.small{
+.frog2.head.small{
   
-    position: re;   
+    position: relative;   
     background-color: orange;
     border: 2px solid black;
     width: 100px;
@@ -71,7 +86,7 @@ div{
    font-size: medium;
 }
 
-.type1.l{
+.frog.eye2.small{
     position: relative;
     top: 10px;
     right: 20px;
@@ -83,7 +98,7 @@ div{
     z-index: 160;
     border: 2px solid black;
 }
-.type1.r{
+.frog.eye1.small{
     position: relative;
     top: 10px;
     left: 20px;
@@ -95,22 +110,20 @@ div{
     z-index: 160;
     border: 2px solid black;
 }
-.type2.l{
+.frog2.eye2.small{
     
-    position: fixed;
+    position: relative;
     right: 20px;
     background-color: orange;
     border-radius: 50px;
     width: 40px;
     height: 40px;
     text-align: center;
-    
+    top:10px;
     z-index: 160;
     border: 2px solid black;
 }
-.type2.r{
-    
-    
+.frog2.eye1.small{
     top: 10px;
     left: 20px;
     background-color: orange;
@@ -121,5 +134,48 @@ div{
     z-index: 160;
     border: 2px solid black;
    
-    position: fixed;
+    position: relative;
+}
+.cont{
+    display: inline-block;
+    margin: 20px;
+}
+.frog2.eye2.big{
+    position: relative;
+    right: 20px;
+    background-color: orange;
+    border-radius: 50px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    z-index: 160;
+    border: 2px solid black;
+    
+}
+.frog2.eye1.big{
+    position: relative;
+   
+    background-color: orange;
+    border-radius: 50px;
+    width: 40px;
+    height: 40px;
+    left: 20px;
+    text-align: center;
+    z-index: 2000;
+    border: 2px solid black;
+}
+.type1.l:hover{
+    background-color: black;
+    color: white;
+    background-position:right 50px ;
+    background-repeat: repeat;
+
+}
+.cont:hover .eye1.big, .cont:hover .eye2.big{
+    background-color: black;
+    color: white;
+}
+.cont:hover .eye2.small, .cont:hover .eye1.small{
+    background-color: black;
+    color: white;
 }
