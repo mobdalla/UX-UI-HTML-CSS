@@ -16,6 +16,30 @@ body{
    font-weight: bold;
    font-size: medium;
 }
+.frog.head.big::before{
+    position: absolute;
+    content: "o";
+    top: -30px;
+    left: -20px;
+    width: 50px;
+    text-align: center;
+    height: 50px;
+    border-radius: 50px;
+    border: 2px solid black;
+    background-color: rebeccapurple;
+}
+.frog.head.big::after{
+    position: absolute;
+    content: "o";
+    top: -30px;
+    right:  -20px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 50px;
+    border: 2px solid black;
+    background-color: rebeccapurple;
+}
 .frog2.head.big{
     position: relative;
     background-color: orange;
@@ -26,6 +50,36 @@ body{
    z-index: 20;
    text-align: center;
    border-radius: 10px;
+   font-weight: bold;
+   font-size: medium;
+}
+.frog2.head.big::before{
+    position: absolute;
+    content: "o";
+    background-color: orange;
+    border: 2px solid black;
+    top: -30px;
+    left: -20px;
+    width: 50px;
+    height: 50px;
+   z-index: 20;
+   text-align: center;
+   border-radius: 50px;
+   font-weight: bold;
+   font-size: medium;
+}
+.frog2.head.big::after{
+    position: absolute;
+    content: "o";
+    background-color: orange;
+    border: 2px solid black;
+    top: -30px;
+    right: -20px;
+    width: 50px;
+    height: 50px;
+   z-index: 20;
+   text-align: center;
+   border-radius: 50px;
    font-weight: bold;
    font-size: medium;
 }
@@ -57,18 +111,45 @@ div{
     border: 2px solid black;
 }
 .frog.head.small{
-    position: relative;
-    background-color: green;
+    position: relative;   
+    background-color: rgb(0, 255, 17);
     border: 2px solid black;
     width: 100px;
     height: 50px;
-   top: 30px;
+    top: 20px;
    z-index: 20;
+   vertical-align: bottom;
+   line-height: 60px;
    text-align: center;
    border-radius: 10px;
    font-weight: bold;
    font-size: medium;
-   
+}
+.frog.head.small::before{
+    
+    position: absolute;
+    content: "o";
+    top: -20px;
+    left: -10px;
+    width: 25px;
+    text-align: center;
+    height: 25px;
+    border-radius: 50px;
+    border: 2px solid black;
+    background-color: rebeccapurple;
+}
+.frog.head.small::after{
+    
+    position: absolute;
+    content: "o";
+    top: -20px;
+    right: -10px;
+    width: 25px;
+    text-align: center;
+    height: 25px;
+    border-radius: 50px;
+    border: 2px solid black;
+    background-color: rebeccapurple;
 }
 .frog2.head.small{
   
@@ -77,9 +158,10 @@ div{
     border: 2px solid black;
     width: 100px;
     height: 50px;
-   top: 30px;
+    top: 20px;
    z-index: 20;
-   
+   vertical-align: bottom;
+   line-height: 60px;
    text-align: center;
    border-radius: 10px;
    font-weight: bold;
@@ -133,10 +215,10 @@ div{
     text-align: center;
     z-index: 160;
     border: 2px solid black;
-   
+
     position: relative;
 }
-.cont{
+div{
     display: inline-block;
     margin: 20px;
 }
