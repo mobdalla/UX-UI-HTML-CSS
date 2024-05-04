@@ -19,27 +19,32 @@ body{
 .frog.head.big::before{
     position: absolute;
     content: "o";
+    color: white;
     top: -30px;
     left: -20px;
     width: 50px;
     text-align: center;
     height: 50px;
     border-radius: 50px;
+    align-content: center;
     border: 2px solid black;
     background-color: rebeccapurple;
 }
 .frog.head.big::after{
     position: absolute;
     content: "o";
+    color: white;
     top: -30px;
     right:  -20px;
     width: 50px;
     height: 50px;
     text-align: center;
+    align-content: center;
     border-radius: 50px;
     border: 2px solid black;
     background-color: rebeccapurple;
 }
+
 .frog2.head.big{
     position: relative;
     background-color: orange;
@@ -56,6 +61,7 @@ body{
 .frog2.head.big::before{
     position: absolute;
     content: "o";
+    color: white;
     background-color: orange;
     border: 2px solid black;
     top: -30px;
@@ -64,6 +70,7 @@ body{
     height: 50px;
    z-index: 20;
    text-align: center;
+   align-content: center;
    border-radius: 50px;
    font-weight: bold;
    font-size: medium;
@@ -71,6 +78,7 @@ body{
 .frog2.head.big::after{
     position: absolute;
     content: "o";
+    color: white;
     background-color: orange;
     border: 2px solid black;
     top: -30px;
@@ -78,38 +86,15 @@ body{
     width: 50px;
     height: 50px;
    z-index: 20;
+   align-content: center;
    text-align: center;
    border-radius: 50px;
    font-weight: bold;
    font-size: medium;
 }
-div{
-    display: inline-block;
-}
-.frog.eye2.big{
-    position: relative;
-    right: 20px;
-    background-color: green;
-    border-radius: 50px;
-    width: 40px;
-    height: 40px;
-    text-align: center;
-    z-index: 160;
-    border: 2px solid black;
-    
-}
-.frog.eye1.big{
-    position: relative;
-    left: 20px;
-    background-color: green;
-    border-radius: 50px;
-    width: 40px;
-    height: 40px;
-    
-    text-align: center;
-    z-index: 2000;
-    border: 2px solid black;
-}
+
+
+
 .frog.head.small{
     position: relative;   
     background-color: rgb(0, 255, 17);
@@ -119,7 +104,7 @@ div{
     top: 20px;
    z-index: 20;
    vertical-align: bottom;
-   line-height: 60px;
+   line-height: 70px;
    text-align: center;
    border-radius: 10px;
    font-weight: bold;
@@ -129,28 +114,31 @@ div{
     
     position: absolute;
     content: "o";
+    color: white;
     top: -20px;
-    left: -10px;
-    width: 25px;
-    text-align: center;
-    height: 25px;
+    right: 80px;
+    width: 40px;
+    height: 40px;
+    align-content: center;
     border-radius: 50px;
     border: 2px solid black;
-    background-color: rebeccapurple;
+    background-color: rgb(0, 255, 17);
 }
 .frog.head.small::after{
     
     position: absolute;
     content: "o";
+    color: white;
     top: -20px;
-    right: -10px;
-    width: 25px;
-    text-align: center;
-    height: 25px;
+    left: 80px;
+    width: 40px;
+    height: 40px;
+    align-content: center;
     border-radius: 50px;
     border: 2px solid black;
-    background-color: rebeccapurple;
+    background-color: rgb(0, 255, 17);
 }
+
 .frog2.head.small{
   
     position: relative;   
@@ -167,97 +155,129 @@ div{
    font-weight: bold;
    font-size: medium;
 }
-
-.frog.eye2.small{
-    position: relative;
-    top: 10px;
-    right: 20px;
-    background-color: green;
-    border-radius: 50px;
-    width: 40px;
-    height: 40px;
-    text-align: center;
-    z-index: 160;
-    border: 2px solid black;
-}
-.frog.eye1.small{
-    position: relative;
-    top: 10px;
-    left: 20px;
-    background-color: green;
-    border-radius: 50px;
-    width: 40px;
-    height: 40px;
-    text-align: center;
-    z-index: 160;
-    border: 2px solid black;
-}
-.frog2.eye2.small{
+.frog2.head.small::before{
     
-    position: relative;
-    right: 20px;
-    background-color: orange;
-    border-radius: 50px;
+    position: absolute;
+    content: "o";
+    color: white;
+    top: -20px;
+    right: 80px;
     width: 40px;
     height: 40px;
-    text-align: center;
-    top:10px;
-    z-index: 160;
+    align-content: center;
+    border-radius: 50px;
     border: 2px solid black;
+    background-color: orange;
 }
-.frog2.eye1.small{
-    top: 10px;
-    left: 20px;
-    background-color: orange;
-    border-radius: 50px;
+.frog2.head.small::after{
+    
+    position: absolute;
+    content: "o";
+    color: white;
+    top: -20px;
+    left: 80px;
     width: 40px;
     height: 40px;
-    text-align: center;
-    z-index: 160;
+    align-content: center;
+    border-radius: 50px;
     border: 2px solid black;
-
-    position: relative;
+    background-color: orange;
+}
+.frog3.head.small{
+  
+    position: relative;   
+    background-color: orange;
+    border: 2px solid black;
+    width: 100px;
+    height: 50px;
+    top: 20px;
+   z-index: 20;
+   vertical-align: bottom;
+   line-height: 60px;
+   text-align: center;
+   border-radius: 10px;
+   font-weight: bold;
+   font-size: medium;
+}
+.frog3.head.small::before{
+    
+    position: absolute;
+    content: "o";
+    color: white;
+    top: -20px;
+    right: 80px;
+    width: 40px;
+    height: 40px;
+    align-content: center;
+    border-radius: 50px;
+    border: 2px solid black;
+    background-color: orange;
+}
+.frog3.head.small::after{
+    
+    position: absolute;
+    content: "o";
+    color: white;
+    top: -20px;
+    left: 80px;
+    width: 40px;
+    height: 40px;
+    align-content: center;
+    border-radius: 50px;
+    border: 2px solid black;
+    background-color: orange;
+}
+.frog4.head.small{
+  
+    position: relative;   
+    background-color: greenyellow;
+    border: 2px solid black;
+    width: 100px;
+    height: 50px;
+    top: 20px;
+   z-index: 20;
+   vertical-align: bottom;
+   line-height: 60px;
+   text-align: center;
+   border-radius: 10px;
+   font-weight: bold;
+   font-size: medium;
+}
+.frog4.head.small::before{
+    
+    position: absolute;
+    content: "o";
+    color: white;
+    top: -20px;
+    right: 80px;
+    width: 40px;
+    height: 40px;
+    align-content: center;
+    border-radius: 50px;
+    border: 2px solid black;
+    background-color: greenyellow;
+}
+.frog4.head.small::after{
+    
+    position: absolute;
+    content: "o";
+    color: white;
+    top: -20px;
+    left: 80px;
+    width: 40px;
+    height: 40px;
+    align-content: center;
+    border-radius: 50px;
+    border: 2px solid black;
+    background-color: greenyellow;
 }
 div{
     display: inline-block;
     margin: 20px;
 }
-.frog2.eye2.big{
-    position: relative;
-    right: 20px;
-    background-color: orange;
-    border-radius: 50px;
-    width: 40px;
-    height: 40px;
-    text-align: center;
-    z-index: 160;
-    border: 2px solid black;
-    
-}
-.frog2.eye1.big{
-    position: relative;
-   
-    background-color: orange;
-    border-radius: 50px;
-    width: 40px;
-    height: 40px;
-    left: 20px;
-    text-align: center;
-    z-index: 2000;
-    border: 2px solid black;
-}
-.type1.l:hover{
-    background-color: black;
-    color: white;
-    background-position:right 50px ;
-    background-repeat: repeat;
 
-}
-.cont:hover .eye1.big, .cont:hover .eye2.big{
-    background-color: black;
-    color: white;
-}
-.cont:hover .eye2.small, .cont:hover .eye1.small{
-    background-color: black;
-    color: white;
-}
+
+   
+    
+
+
